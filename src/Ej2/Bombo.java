@@ -29,9 +29,9 @@ public class Bombo {
     private void girarBombo(){//Girar el bombo (es decir que se mezclan las bolas)
         for (int i = 0; i < cantidadBolas; i++) {
             int j =(int) (Math.random()*cantidadBolas);
-            Bola x = bolas[i];
+            Bola y = bolas[i];
             bolas[i]=bolas[j];
-            bolas[j]= x;
+            bolas[j]= y;
         }
 
     }
